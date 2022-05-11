@@ -204,11 +204,11 @@ architecture shifter of shift_register is
 begin
 	with dir & shamt (3 downto 0) select
 	dataout <= datain(30 downto 0) & '0' when "00001",
-		   datain(29 downto 0) & "00" when "00010",
-		   datain(28 downto 0) & "000" when "00011",
+		   datain(29 downto 0) & "00" when "00011",
+		   datain(28 downto 0) & "000" when "00111",
 		   "0" & datain(31 downto 1) when "10001",
-		   "00" & datain(31 downto 2) when "10010",
-		   "000" & datain(31 downto 3) when "10011",
+		   "00" & datain(31 downto 2) when "10011",
+		   "000" & datain(31 downto 3) when "10111",
 		   datain when others;
 	
 

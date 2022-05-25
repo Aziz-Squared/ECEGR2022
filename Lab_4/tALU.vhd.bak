@@ -100,10 +100,7 @@ BEGIN
 		control <= "01001";
 		wait for 20 ns;
 
-		datain_a <= X"01234567";
-		datain_b <= X"11223344";
-		control <= "01010";
-		wait for 20 ns;
+
 
 
 		wait; -- will wait forever

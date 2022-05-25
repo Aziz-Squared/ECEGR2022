@@ -74,7 +74,7 @@ begin
 			     dOutORI when "01000",
 			     dOutAnd when "01001",
 			     dOutAndi when "01010",
-			     X"00000000" when others;
+			     0x00000000 when others;
 			     	
 
 

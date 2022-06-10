@@ -156,7 +156,7 @@ begin
 				instruction(7) & instruction(30 downto 25) & instruction(11 downto 8) & '0' when imm = "10" else
 				(Others=>'0');
 
-	branchSelect <= '1' when (branch = "10" and Zed = '1') or (branch = "10" and Zed = '0') else
+	branchSelect <= '1' when (branchOut = "10" and Zed = '1') or (branchOut = "10" and Zed = '0') else
 				'0';
 
 

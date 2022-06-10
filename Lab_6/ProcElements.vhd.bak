@@ -84,7 +84,7 @@ begin
 
 	ALUSrc <= '0' when opcode = "0110011" or opcode = "1100011" or opcode = "XXXXXXX" else '1';
 
-	RegWrite <= '1' when (opcode = "0110111" or opcode = "0000011" or opcode = "0010011" or opcode = "0110011") and clk = '0' else '0';
+	RegWrite <= '1' when (opcode = "0110111" or opcode = "0000011" or opcode = "0010011" or opcode = "0110011") and clk = '0' else '0'
 
 
 	ImmGen <= "00" when opcode = "0010011" or opcode = "0000011" else -- I-Type
